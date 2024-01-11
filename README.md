@@ -19,7 +19,7 @@ Yield (last column)
 
 Feature design for weather and remote sensing based on crop calendar from a simple crop model called CSSF(see [reference](https://doi.org/10.24381/cds.b2f6f9f6)) (DVS changes 0-1, 1-2).
 
-### Features included in grain_maize_US.csv
+### grain_maize_US.csv
 This file excludes yield trend (features).
 
 For leave-one-out cross-validation.
