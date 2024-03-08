@@ -1,4 +1,4 @@
-CROP_NAME,IDREGION,FYEAR,YIELD
+crop_name,loc_id,year,yield
 Grain maize,FR102,1989,7.9
 Grain maize,FR102,1990,5.5
 Grain maize,FR102,1991,7.7
