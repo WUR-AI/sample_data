@@ -1,4 +1,4 @@
-crop_name,adm_id,planting_doy,maturity_doy
+crop_name,loc_id,planting_doy,maturity_doy
 Grain maize,US-20-161,122.0,260.0
 Grain maize,US-19-159,133.0,270.0
 Grain maize,US-30-009,134.0,252.0
