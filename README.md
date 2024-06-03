@@ -1,5 +1,5 @@
 # Sample data for AgML crop yield forecasting
-Sample data for grain maize or corn in the United States.
+Sample data for grain maize and soft wheat. For grain maize, there is input and label data for Spain (ES) and the Netherlands (NL). Similarly, there are predesigned features and labels for the United States (US). For soft wheat, there is input and label data for Spain (ES) and the Netherlands (NL)
 
 ## Grain maize features and labels
 ### grain_maize_US_train.csv, grain_maize_US_test.csv
@@ -24,9 +24,10 @@ This file excludes yield trend (features).
 
 For leave-one-out cross-validation.
 
-## Raw data
-Included in county-data-US.zip. For AgML, we only use the following:
-* METEO_COUNTY_US.csv: Meteo data including maximum, minimum, average daily air temperature (Îõ); sum of daily precipitation (PREC) (mm); sum of daily evapotranspiration of short vegetation (ET0) (Penman-Monteith, Allen et al., (1998)) (mm); climate water balance = (PREC - ET0) (mm). Source: Boogaard et al. (2022).
-* REMOTE_SENSING_COUNTY_US.csv: Fraction of Absorbed Photosynthetically Active Radiation (Smoothed) (FAPAR). Source: Copernicus GLS (2020).
-* SOIL_COUNTY_US.csv: Soil water holding capacity. Source: WISE Soil Property Database (Batjes, 2016).
-* YIELD_COUNTY_US.csv: County yield statistics (bushels/acre). Source: NASS (USDA-NASS, 2022).
+## Input data and label data
+* fpar: FPAR from [JRC_FPAR500m product](https://agricultural-production-hotspots.ec.europa.eu/data/indicators_fpar/).
+* meteo: Weather variables and evapotranspiration from [AgERA5](https://doi.org/10.24381/cds.6c68c9bb). Evapotranspiration data is based on AgERA5 and prepared by [FAO](https://data.apps.fao.org/static/data/index.html?prefix=static%2Fdata%2Fc3s%2FAGERA5_ET0).
+* ndvi: NDVI from the [NASA MOD09CMG product](https://lpdaac.usgs.gov/products/mod09cmgv061/#tools).
+* soil: soil properties from the [WISE Soil project](https://data.isric.org/geonetwork/srv/eng/catalog.search#/metadata/dc7b283a-8f19-45e1-aaed-e9bd515119bc)
+* soil moisture: Surface moisture and root zone moisture from [NASA GLDAS](https://ldas.gsfc.nasa.gov/gldas/model-output).
+* yield: label data from harmonized subnational statistics published by [EC JRC](https://agri4cast.jrc.ec.europa.eu/DataPortal/).
